@@ -1,0 +1,17 @@
+CREATE TABLE Person (
+	PersonId int,
+	LastName varchar(300),
+	FirstName varchar(300),
+	Address varchar(300),
+	City varchar(300)
+	); 
+CREATE TABLE Address (
+  AddressId int,
+  PersonId int,
+  city varchar (200),
+  State varchar (200)
+  );
+INSERT INTO Person (PersonId, LastName, FirstName)
+VALUES ('1', 'wang', 'Allen'), ('2', 'Alice', 'bob');
+INSERT INTO Address (AddressId, PersonId, city, State)
+VALUES ('1', '2', 'NewYorkCity', 'NewYork'), ('2', '3', 'Leetcode', 'California');
